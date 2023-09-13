@@ -1,10 +1,17 @@
+import { Container } from './App.styled';
+
 import { ProfileCard } from './Profile/ProfileCard';
 import user from 'data/user.json';
-import { Container } from './App.styled';
+
 import data from 'data/data.json';
 import { StatisticsList } from './Statistics/StatisticsList';
+
 import friends from 'data/friends.json';
 import { FriendList } from './Friends/FriendList';
+
+import transactions from 'data/transactions.json';
+import { TransactionHistory } from './Transactions/TransactionsHistory';
+
 export const App = () => {
   return (
     <Container>
@@ -18,6 +25,7 @@ export const App = () => {
       />
       <StatisticsList stats={data} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </Container>
   );
 };
