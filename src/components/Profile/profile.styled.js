@@ -58,4 +58,5 @@ export const Quantity = styled.span`
   font-size: 18px;
   font-weight: bold;
   color: #007bff;
+  margin-left: 10px;
 `;
