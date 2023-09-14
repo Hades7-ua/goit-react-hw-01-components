@@ -1,36 +1,37 @@
 import styled from 'styled-components';
 
-export const FriendListContainer = styled.div`
-  width: 768px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
-`;
-
-export const FriendListItem = styled.li`
+export const FriendsList = styled.ul`
   display: flex;
-  width: 300px;
-  background-color: #70ace7;
+  flex-direction: column;
   align-items: center;
-  margin: 0px auto;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+  gap: 12px;
+  padding: 36px 0;
 `;
 
-export const FriendAvatar = styled.img`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-`;
+export const FriendsItem = styled.li`
+  display: flex;
+  align-items: center;
 
-export const FriendName = styled.span`
-  font-weight: bold;
-`;
+  width: 360px;
+  padding: 10px 20px;
+  background-color: #4dcb55f0;
 
-export const FriendStatus = styled.span`
-  color: ${props => (props.isOnline ? 'green' : 'red')};
+  & > span {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+
+    border-radius: 100%;
+    background-color: ${props => (props.isOnline ? 'red' : 'green')};
+  }
+
+  & > img {
+    width: 36px;
+    margin-right: 16px;
+  }
+
+  & > p {
+    font-size: 20px;
+    font-weight: 480;
+  }
 `;

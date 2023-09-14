@@ -8,7 +8,7 @@ export const Container = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   display: column;
   justify-content: center;
   align-items: center;
