@@ -10,7 +10,7 @@ import {
 export const StatisticsList = ({ stats, title }) => {
   return (
     <List>
-      <Title>{title && <h2>{title}</h2>}</Title>
+      {title && <Title>{title}</Title>}
       <StatisticsInfo>
         {' '}
         {stats.map(el => (
